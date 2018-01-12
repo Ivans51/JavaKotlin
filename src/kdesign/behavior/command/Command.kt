@@ -1,7 +1,9 @@
 package kdesign.behavior.command
 
 interface OrderCommand {
-    fun execute()
+    fun execute() {
+        println()
+    }
 }
 
 class OrderAddCommand(val id: Long) : OrderCommand {
